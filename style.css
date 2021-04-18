@@ -1,0 +1,123 @@
+:root {
+  --background-button: #f8f9fa;
+  --margin-button: 7px;
+  --border-color: #dfe1e5;
+  --background-footer: #f2f2f2;
+}
+
+body {
+  font-family: arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: flex-end; /* right to left*/
+  align-items: center; /* up to bottom */
+}
+
+.header-text,
+.header-img {
+  padding: 0px 8px 5px 8px;
+  /* padding: up right bottom left */
+}
+
+.header-text {
+  /* 13.6 */
+  font-size: 0.8rem;
+  /* Medidas relativas 
+    % porcentaje
+    rm Tamaño segun padre
+    rem Tamaño según Pagina
+    */
+}
+
+.header-img img {
+  border-radius: 50%;
+  height: 32px;
+}
+
+/* Main */
+
+.main-img img {
+  height: 92px;
+}
+
+.btn-action {
+  height: 37px;
+  border: 0.5px solid var(--background-button);
+  border-radius: 5px;
+  padding: 0px 12px;
+  background-color: var(--background-button);
+}
+
+.main-button button:nth-child(1) {
+  margin-right: var(--margin-button);
+}
+
+.main-button button:nth-child(2) {
+  margin-left: var(--margin-button);
+}
+
+.btn-action:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+
+.main-input {
+  padding: 40px 0px;
+}
+
+.input-search {
+  width: 620px;
+  height: 40px;
+}
+
+.input-search input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  padding-left: 54px;
+}
+
+.input-search input:focus {
+  outline: none;
+}
+
+.main-text {
+  padding-top: 40px;
+}
+
+.main-text-short {
+  font-size: 0.87rem;
+}
+
+.icon-search {
+  top: 6px;
+  opacity: 0.6;
+  left: 50px;
+}
+
+.icon-microfone {
+  top: 6px;
+  right: 50px;
+}
+
+.icon-microfone,
+.icon-search {
+  height: 28px;
+}
+
+/* Utils */
+
+.w-100 {
+  width: 100%;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.relative-position {
+  position: relative;
+}
